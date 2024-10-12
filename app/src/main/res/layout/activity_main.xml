@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+     <ImageView
+         android:layout_width="match_parent"
+         android:layout_height="400dp"
+         android:id="@+id/objectImage"
+         android:scaleType="centerCrop"
+         app:srcCompat="@drawable/imageview"
+         android:layout_marginTop="16dp"
+         android:contentDescription="Captured image"
+         />
+
+
+     <Button
+         android:layout_gravity="center"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/captureImgbtn"
+         android:fontFamily="@font/poppins"
+         android:layout_marginTop="16dp"
+         android:textSize="18sp"
+          android:text="Capture Image"
+          />
+
+
+    <TextView
+        android:id="@+id/labeltext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/poppins"
+        android:layout_gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
