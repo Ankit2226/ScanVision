@@ -9,28 +9,41 @@
     android:padding="16dp"
     tools:context=".MainActivity">
 
-     <ImageView
-         android:layout_width="match_parent"
-         android:layout_height="400dp"
-         android:id="@+id/objectImage"
-         android:scaleType="centerCrop"
-         app:srcCompat="@drawable/imageview"
-         android:layout_marginTop="16dp"
-         android:contentDescription="Captured image"
-         />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/objectImage"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/imageview"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Captured image" />
 
+    <!-- Horizontal LinearLayout for buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
 
-     <Button
-         android:layout_gravity="center"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:id="@+id/captureImgbtn"
-         android:fontFamily="@font/poppins"
-         android:layout_marginTop="16dp"
-         android:textSize="18sp"
-          android:text="Capture Image"
-          />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/captureImgbtn"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins"
+            android:textSize="18sp"
+            android:text="Cap img" />
 
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/uploadImgbtn"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="18sp"
+            android:text="Upload" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/labeltext"
